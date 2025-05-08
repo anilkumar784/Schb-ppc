@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Charles Schwab Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
@@ -16,28 +17,40 @@
       align-items: center;
       background-color: #2a4b7c;
       padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar .left-section {
+      display: flex;
+      align-items: center;
     }
 
     .navbar .menu {
       color: white;
-      font-size: 18px;
+      font-size: 24px;
+      margin-right: 15px;
+      cursor: pointer;
     }
 
-    .navbar .logo {
-      background-color: #2a4b7c;
-      color: white;
-      padding: 5px 10px;
-      font-weight: bold;
+    .navbar .logo img {
+      height: 30px;
+    }
+
+    .navbar .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
     }
 
     .navbar .buttons button {
       background-color: #ff7f2a;
       color: white;
       border: none;
-      padding: 8px 15px;
-      margin-left: 10px;
+      padding: 8px 12px;
       cursor: pointer;
       border-radius: 5px;
+      font-size: 14px;
+      white-space: nowrap;
     }
 
     .header {
@@ -49,7 +62,7 @@
 
     .header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 24px;
     }
 
     .header p {
@@ -62,8 +75,9 @@
     }
 
     .content h2 {
-      font-size: 22px;
+      font-size: 20px;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .card {
@@ -83,17 +97,46 @@
     }
 
     .card p {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar .buttons {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+
+      .header h1 {
+        font-size: 20px;
+      }
+
+      .header p {
+        font-size: 14px;
+      }
+
+      .card p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="navbar">
-    <div class="menu">☰</div>
-    <div class="logo">charles SCHWAB</div>
+    <div class="left-section">
+      <div class="menu">☰</div>
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Charles_Schwab_logo.svg/200px-Charles_Schwab_logo.svg.png" alt="Charles Schwab Logo">
+      </div>
+    </div>
     <div class="buttons">
       <button>Open an Account</button>
       <button>Log In</button>
