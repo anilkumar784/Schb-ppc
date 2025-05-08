@@ -33,7 +33,7 @@
     }
 
     .navbar .logo img {
-      height: 50px; /* made the logo bigger */
+      height: 50px;
     }
 
     .navbar .buttons {
@@ -56,7 +56,7 @@
     .header {
       background-color: #0075a8;
       color: white;
-      padding: 40px 20px; /* slightly more padding */
+      padding: 40px 20px;
       text-align: left;
     }
 
@@ -86,7 +86,7 @@
       padding: 30px;
       text-align: center;
       max-width: 400px;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
@@ -100,6 +100,40 @@
       font-size: 18px;
       font-weight: bold;
       margin: 0;
+    }
+
+    .special-section {
+      padding: 20px;
+    }
+
+    .special-section h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .special-card {
+      border: 1px solid #0075a8;
+      background-color: #f5fafa;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .special-card h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    .special-card a {
+      color: #0075a8;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .special-card a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -127,7 +161,7 @@
       }
 
       .navbar .logo img {
-        height: 40px; /* slightly smaller logo on mobile */
+        height: 40px;
       }
     }
   </style>
@@ -157,6 +191,27 @@
     <div class="card">
       <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon">
       <p>Call 877-519-1403</p>
+    </div>
+  </div>
+
+  <div class="special-section">
+    <h2>Looking for specialized support?</h2>
+
+    <div class="special-card">
+      <h3>Brokerage Services</h3>
+      <a href="tel:8004354000">800-435-4000</a>
+      <p>Use TTY services for the hearing impaired</p>
+      <a href="tel:8003452550">800-345-2550</a>
+      <a href="#">Notify Schwab of the death of a client</a>
+    </div>
+
+    <div class="special-card">
+      <h3>Banking & Mortgage</h3>
+      <p>Schwab Client Banking Services</p>
+      <a href="tel:8884039000">888-403-9000</a>
+      <p><strong>Mortgage customers:</strong><br>
+      Please contact Rocket Mortgage at 
+      <a href="tel:8775354023">877-535-4023</a> for any questions or servicing.</p>
     </div>
   </div>
 
