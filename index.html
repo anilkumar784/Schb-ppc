@@ -2,218 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Charles Schwab Contact Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charles Schwab Contact Page</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
     }
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #2a4b7c;
-      padding: 10px 20px;
-      flex-wrap: wrap;
-    }
-
-    .navbar .left-section {
-      display: flex;
-      align-items: center;
-    }
-
-    .navbar .menu {
+    header {
+      background-color: #0075a8;
       color: white;
-      font-size: 24px;
-      margin-right: 15px;
-      cursor: pointer;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .navbar .logo img {
+    header img {
       height: 50px;
     }
 
-    .navbar .buttons {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .navbar .buttons button {
-      background-color: #ff7f2a;
-      color: white;
+    header button {
+      background-color: orange;
       border: none;
-      padding: 8px 12px;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 14px;
-      white-space: nowrap;
-    }
-
-    .header {
-      background-color: #0075a8;
       color: white;
-      padding: 40px 20px;
-      text-align: left;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
     }
 
-    .header h1 {
-      margin: 0;
-      font-size: 26px;
+    .container {
+      padding: 20px;
     }
 
-    .header p {
-      margin: 10px 0 0 0;
+    h1, h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 10px 0;
       font-size: 16px;
     }
 
-    .content {
-      padding: 20px;
-    }
-
-    .content h2 {
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
     .card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 30px;
-      text-align: center;
-      max-width: 400px;
-      margin: 0 auto 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      width: 40px;
-      height: 40px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .special-section {
-      padding: 20px;
-    }
-
-    .special-section h2 {
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .special-card {
       border: 1px solid #0075a8;
-      background-color: #f5fafa;
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
+      background-color: #f4f9fa;
     }
 
-    .special-card h3 {
-      margin-top: 0;
-      font-size: 18px;
-    }
-
-    .special-card a {
+    .card a {
       color: #0075a8;
       text-decoration: none;
-      display: block;
-      margin-bottom: 10px;
+      font-weight: bold;
     }
 
-    .special-card a:hover {
+    .card a:hover {
       text-decoration: underline;
     }
 
+    .special-section button {
+      background-color: #0075a8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
     @media (max-width: 600px) {
-      .navbar {
+      header {
         flex-direction: column;
         align-items: flex-start;
       }
-
-      .navbar .buttons {
+      header img {
+        height: 60px;
+        margin-bottom: 10px;
+      }
+      header button {
         width: 100%;
-        justify-content: flex-start;
-        margin-top: 10px;
-      }
-
-      .header h1 {
-        font-size: 22px;
-      }
-
-      .header p {
-        font-size: 14px;
-      }
-
-      .card p {
-        font-size: 16px;
-      }
-
-      .navbar .logo img {
-        height: 40px;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="navbar">
-    <div class="left-section">
-      <div class="menu">☰</div>
-      <div class="logo">
-        <img src="chrllss.jpg" alt="Charles Schwab Logo">
-      </div>
-    </div>
-    <div class="buttons">
-      <button>Open an Account</button>
-      <button>Log In</button>
-    </div>
+<header>
+  <img src="chrllss.jpg" alt="Charles Schwab Logo">
+  <button>Open an Account</button>
+</header>
+
+<div class="container">
+  <h1>Looking for help? Contact us today.</h1>
+  <p>Reach out to Charles Schwab customer service by phone, chat, or visit your local branch.</p>
+
+  <div class="card">
+    <h2>Call 877-519-1403</h2>
   </div>
 
-  <div class="header">
-    <h1>Looking for help?<br>Contact us today.</h1>
-    <p>Reach out to Charles Schwab customer service by phone, chat, or visit your local branch.</p>
+  <h2>Looking for specialized support?</h2>
+
+  <div class="card">
+    <h3>Brokerage Services</h3>
+    <a href="tel:8004354000">800-435-4000</a><br>
+    <p>Use TTY services for the hearing impaired</p>
+    <a href="tel:8003452550">800-345-2550</a><br>
+    <a href="#">Notify Schwab of the death of a client</a>
   </div>
 
-  <div class="content">
-    <h2>Choose your preferred method.</h2>
+  <div class="card">
+    <h3>Banking & Mortgage</h3>
+    <p><strong>Schwab Client Banking Services</strong></p>
+    <a href="tel:8884039000">888-403-9000</a><br>
+    <p><strong>Mortgage customers:</strong> Please contact Rocket Mortgage at <a href="tel:8775354023">877-535-4023</a> for any questions or servicing.</p>
+  </div>
+
+  <div class="card">
+    <h3>Schwab Intelligent Portfolios®</h3>
+    <a href="tel:8556945208">855-694-5208</a>
+  </div>
+
+  <div class="card">
+    <h3>Trading Services</h3>
+    <a href="tel:8882456864">888-245-6864</a>
+  </div>
+
+  <div style="text-align: center; margin: 20px 0;">
+    <button>View more ↓</button>
+  </div>
+
+  <div class="mail-section">
+    <h2>Need to mail us something?</h2>
+    <p>Choose your location based on your residential address.</p>
+    <p style="color: #0075a8; margin: 10px 0;">
+      <a href="#" style="margin-right: 10px;">Expand All</a> |
+      <a href="#" style="margin-left: 10px;">Collapse All</a>
+    </p>
     <div class="card">
-      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon">
-      <p>Call 877-519-1403</p>
+      <p><strong>Mail to El Paso, Texas</strong> if you're a resident of one of the states below (expand for all locations)</p>
     </div>
   </div>
-
-  <div class="special-section">
-    <h2>Looking for specialized support?</h2>
-
-    <div class="special-card">
-      <h3>Brokerage Services</h3>
-      <a href="tel:8004354000">800-435-4000</a>
-      <p>Use TTY services for the hearing impaired</p>
-      <a href="tel:8003452550">800-345-2550</a>
-      <a href="#">Notify Schwab of the death of a client</a>
-    </div>
-
-    <div class="special-card">
-      <h3>Banking & Mortgage</h3>
-      <p>Schwab Client Banking Services</p>
-      <a href="tel:8884039000">888-403-9000</a>
-      <p><strong>Mortgage customers:</strong><br>
-      Please contact Rocket Mortgage at 
-      <a href="tel:8775354023">877-535-4023</a> for any questions or servicing.</p>
-    </div>
-  </div>
+</div>
 
 </body>
 </html>
